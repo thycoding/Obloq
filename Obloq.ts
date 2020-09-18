@@ -1,5 +1,5 @@
 /**
- *Obloq Link
+ *Obloq IoT
  */
 
  
@@ -36,7 +36,7 @@ enum TOPIC {
 /**
  *Obloq implementation method.
  */
-//% weight=10 color=#019b9b icon="\uf121" block="Obloq Link"
+//% weight=10 color=#019b9b icon="\uf121" block="Obloq IoT"
 namespace Obloq {
 
     //serial
@@ -312,8 +312,8 @@ namespace Obloq {
             OBLOQ_SERIAL_RX,
             BaudRate.BaudRate9600
         )
-        obloqSetTxBufferSize(300)
-        obloqSetRxBufferSize(300)
+        obloqSetTxBufferSize(500)
+        obloqSetRxBufferSize(500)
         obloqWriteString("\r")
         item = serial.readString()
         OBLOQ_SERIAL_INIT = OBLOQ_BOOL_TYPE_IS_TRUE

@@ -1002,8 +1002,7 @@ namespace Obloq {
         let returnCode = ""
         let tempNumber = 0
         let tempStr = ""
-        let myUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + cityID + "&appid=" + weatherKey
-        //let myUrl = "http://api.openweathermap.org:80/data/2.5/weather?id=" + cityID + "&appid=" + weatherKey		
+        let myUrl = "http://api.openweathermap.org:80/data/2.5/weather?id=" + cityID + "&appid=" + weatherKey		
         serial.readString()
         obloqWriteString("|3|1|" + myUrl + "|\r")
         for (let i = 0; i < 3; i++) {

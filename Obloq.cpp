@@ -7,7 +7,7 @@ namespace Obloq {
         if(size > 500) {
             size = 500;
         }
-        uBit.serial.setTxBufferSize(500);
+        uBit.serial.setTxBufferSize(size);
     }
 
     //%
@@ -15,7 +15,7 @@ namespace Obloq {
         if(size > 500) {
             size = 500;
         }
-        uBit.serial.setRxBufferSize(500);
+        uBit.serial.setRxBufferSize(size);
     }
 
     //%

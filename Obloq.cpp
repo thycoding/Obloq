@@ -13,7 +13,7 @@ namespace Obloq {
     //%
     void obloqSetRxBufferSize(int size){
         if(size > 100) {
-            size = 500;
+            size = 700;
         }
         uBit.serial.setRxBufferSize(size);
     }

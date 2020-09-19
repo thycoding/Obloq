@@ -313,7 +313,7 @@ namespace Obloq {
             BaudRate.BaudRate9600
         )
         obloqSetTxBufferSize(500)
-        obloqSetRxBufferSize(500)
+        obloqSetRxBufferSize(700)
         obloqWriteString("\r")
         item = serial.readString()
         OBLOQ_SERIAL_INIT = OBLOQ_BOOL_TYPE_IS_TRUE

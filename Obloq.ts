@@ -79,7 +79,7 @@ namespace Obloq {
     let OBLOQ_WORKING_MODE_IS_HTTP = OBLOQ_BOOL_TYPE_IS_FALSE
     let OBLOQ_WORKING_MODE_IS_STOP = OBLOQ_BOOL_TYPE_IS_TRUE
 
-    let cityID = ""
+  /**  let cityID = ""
     let weatherKey = ""    
 
     let wInfo: string[][] = [
@@ -176,7 +176,8 @@ namespace Obloq {
         //% block="Yishun"
         Yishun = 1880701
     }
-    
+    */
+	
     export class PacketaMqtt {
         /**
          * Obloq receives the message content.
@@ -545,7 +546,7 @@ namespace Obloq {
     
  
     /**
-     * The IFTTP post request.url(string): URL; content(string):content
+     * The IFTTT post request.url(string): URL; content(string):content
      * time(ms): private long maxWait
      * @param time set timeout, eg: 10000
     */
@@ -935,46 +936,47 @@ namespace Obloq {
         return ret
     }
 
-    
-      /**
+  
+    /**
      * Return the City ID in the World 
-    */ 
+  
     //% weight=95 group="06_Weather"
     //% blockId=getCityID
     //% block="get City ID of %myCity"
     //% advanced=true    
     export function getCityID(myCity: cityIDs): string {
         return ("" + myCity)
-    }
+    }  */ 
 
+  
     /**
      * Return the Town ID in Singapore 
-    */ 
+    
     //% weight=94 group="06_Weather"
     //% blockId=getCity2ID
     //% block="get Town ID of %myCity | in Singapore"
     //% advanced=true
     export function getCity2ID(myCity: city2IDs): string {
         return ("" + myCity)
-    }
+    } */ 
 
     /**
      * Return the weather information about the city from http://openweathermap.org/ 
-    */
+    
     //% weight=93 group="06_Weather"
     //% blockId=getWeatherInfo
     //% block="get weather data: %myInfo" blockGap=50
     //% advanced=true
     export function getWeatherInfo(myInfo: wType): string {
         return wInfo[myInfo][2]
-    }
+    } */
 
     /**
      * Connect to https://openweathermap.org/ to get the weather information
      * You have to enter the City ID and your access key of the website
      * @param myID to myID ,eg: "City Number"
      * @param myKey to myKey ,eg: "access key"
-    */
+   
     //% weight=96 group="06_Weather"
     //% blockId=setWeatherHttp
     //% block="set city ID to get the weather information: %myID | OpenWeatherMap key: %myKey"
@@ -1050,9 +1052,9 @@ namespace Obloq {
             }
             basic.showIcon(IconNames.No)
         }
-    }  
+    }   */
     
-    
+  	
     function Obloq_connect_mqtt(): void {
         if (!OBLOQ_SERIAL_INIT) {
             Obloq_serial_init()

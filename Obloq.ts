@@ -813,7 +813,7 @@ namespace Obloq {
         . . . . .
         . . . . .
         `)
-	  basic.pause(500)
+	  basic.pause(200)
 	  basic.showLeds(`
         . . . . .
         . . # . .
@@ -831,10 +831,13 @@ namespace Obloq {
 	   
         obloqWriteString("|3|1|http://" + url + "|\r")
         let ret = Obloq_http_wait_request(time)
-        if (ret == "")
+        if (ret == "") {
+			ret = "Request Failed"
             basic.showIcon(IconNames.No)
-        else
+		}
+        else {
             basic.showIcon(IconNames.Yes)   	   
+		}
         return ret
     }
 

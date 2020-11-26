@@ -4,8 +4,7 @@
     "description": "DFRobot Obloq IoT @THYCoding </>",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
@@ -19,5 +18,9 @@
         "mqttMoretest.ts",
         "httpTest.ts"
     ],
-    "public": true
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }

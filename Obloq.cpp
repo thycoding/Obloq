@@ -46,12 +46,11 @@ namespace Obloq {
       }
     }
 
-     //%
+    //%
     void obloqWriteString(StringData *text) {
       if (!text) {
           return;
       }
       uBit.serial.send(ManagedString(text));
     }
-
 }

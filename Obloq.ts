@@ -1,5 +1,5 @@
-/**
- *Obloq IoT
+/*
+ *Obloq WiFi
  */
 
  

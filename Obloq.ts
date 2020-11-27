@@ -1,5 +1,5 @@
 /*
- *Obloq IoT
+ *Obloq
  */
 
  
@@ -36,7 +36,7 @@ enum TOPIC {
 /**
  *Obloq implementation method.
  */
-//% weight=10 color=#019b9b icon="\uf121" block="Obloq IoT"
+//% weight=10 color=#019b9b icon="\uf121" block="Obloq"
 namespace Obloq {
 
     //serial

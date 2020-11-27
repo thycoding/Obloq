@@ -1,6 +1,6 @@
-# Obloq IoT
+# Obloq
 
-This Obloq IoT Extension is modified from DFRobot Obloq
+This Obloq Extension is modified from DFRobot Obloq
 
 ## MODIFICATIONS
 1) Other Cloud Brokers can be used

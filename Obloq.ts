@@ -751,12 +751,12 @@ namespace DFRobotWiFiIoTUART {
 		
         obloqWriteString("|3|2|https://api.telegram.org/bot/" + apiKey + "/sendMessage?chat_id=" + chatId + "&text=" +  message + "|\r")
         let ret = Obloq_http_wait_request(10000)
-	   if (ret.substr(0, "ok".length) == "ok") {
-		  basic.showIcon(IconNames.Yes) 
-	   }
-	   else {
-		  basic.showIcon(IconNames.No)
-	   }
+	   //if (ret.substr(0, "ok".length) == "ok") {
+		//  basic.showIcon(IconNames.Yes) 
+	   //}
+	  // else {
+	//	  basic.showIcon(IconNames.No)
+	  // }
     } 
 
     /**
